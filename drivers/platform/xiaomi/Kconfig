@@ -1,0 +1,15 @@
+config MACH_XIAOMI_MSM8998
+	bool "Xiaomi MSM8998"
+	depends on ARCH_MSM8998
+	help
+	  Support for Xiaomi MSM8998 Boards
+
+menu "Xiaomi board selection"
+
+config MACH_XIAOMI_SAGIT
+	bool "sagit board"
+	select MACH_XIAOMI_MSM8998
+	help
+	  Support for Xiaomi Mi 6(sagit)
+
+endmenu
